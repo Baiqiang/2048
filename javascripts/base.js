@@ -153,7 +153,7 @@ window.fakeStorage = {
 };
 
 function LocalScoreManager() {
-  this.key     = (window.gameName || "") + "bestScore";
+  this.key     = (window.gameName || "") + "-bestScore";
 
   var supported = this.localStorageSupported();
   this.storage = supported ? window.localStorage : window.fakeStorage;
