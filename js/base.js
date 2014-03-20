@@ -91,7 +91,7 @@ KeyboardInputManager.prototype.listen = function () {
 
   // Listen to swipe events
   var touchStartClientX, touchStartClientY;
-  var gameContainer = document.getElementsByClassName("game-container")[0];
+  var gameContainer = document.querySelector(".outer-container") || document.querySelector(".game-container");
 
   gameContainer.addEventListener("touchstart", function (event) {
     if (event.touches.length > 1) return;
